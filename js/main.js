@@ -12,8 +12,7 @@
     spinner(); 
 
     // Initiate the wowjs
-    new WOW().init();
-
+    new WOW().init(); 
 
     // Sticky Navbar
     $(window).scroll(function () {
@@ -22,8 +21,7 @@
         } else {
             $('.navbar').removeClass('sticky-top shadow-sm');
         }
-    });
-
+    }); 
 
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
@@ -39,8 +37,7 @@
                 $(this).closest('a').addClass('active');
             }
         }
-    });
-
+    }); 
 
     // Back to top button
     $(window).scroll(function () {
@@ -53,16 +50,14 @@
     $('.back-to-top').click(function () {
         $('html, body').animate({ scrollTop: 0 }, 500, 'easeInOutExpo');
         return false;
-    });
-
+    }); 
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
         time: 2000
-    });
-
-
+    }); 
+    
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
